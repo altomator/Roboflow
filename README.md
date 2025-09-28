@@ -100,10 +100,14 @@ export ROBOFLOW_API_KEY="your key"
 To launch processing of an image folder from a Gallica document, using a model named `snooptypo/2`, enter this command in Terminal:
  
 ```
-python roboflow_inference.py IIIF_images/btv1b86000632 snooptypo/2 -i
+python roboflow_inference.py btv1b86000632 snooptypo/2 -i
 ```
 
-The folder must be named after the ARK identifier. Recursive processing of a folder of folders is possible. 
+The folder must be named after the ARK identifier. Recursive processing of a folder of folders is possible:
+```
+python roboflow_inference.py IIIF_images snooptypo/2 -i
+```
+
 The results are stored in a JSON folder (one data file per image, named ark/ark-vue.json).  
 
 The elements detected in the images are described in the JSON data: position in the image, type, detection confidence. 
