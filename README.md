@@ -6,7 +6,7 @@ Roboflow integration with Gallica content (and [Panoptic](https://panopticorg.gi
 - Roboflow [project](https://app.roboflow.com/snooptypo)
 - [Methodology](https://docs.google.com/presentation/d/1TdVedZGo4_sOiXMk-Do7hSQA7STYTNOU_ZxO1fHRrXw/edit?slide=id.g12b1dcf850d_0_49#slide=id.g12b1dcf850d_0_49)
 
-<i>(A French version of this tutorial is available)</i>
+<i>(A [French version](readme_FR.pdf) of this tutorial is available)</i>
 
 ## 1. Extracting images from Gallica
 
