@@ -17,7 +17,7 @@ Roboflow integration with Gallica content (and [Panoptic](https://panopticorg.gi
 `extract_iiif.py` must be feed with a file of ARK IDs and a image ratio for extraction (> 0.0 and <= 1.0):
 
 ```
->python extract_iiif.py arks.txt 0.7
+>python extract_iiif.py arks.txt 0.5
 ```
 Notes:
 - Remember to restart the script to cover the case where the API failed the first time.
@@ -55,5 +55,17 @@ There are two types of thumbnails produced:
 
 The script must be run on each test, train, and valid subfolder. Example with the test folder:
 ```
-> python extract_boxest.py test 0.7 -i
+> python extract_boxes.py test 0.7 -i
 ```
+
+After processing, the data produced is stored in the `output` folder:
+- images of pages with annotated content boxes superimposed
+- IIIF thumbnails of content (`IIIF_thumbs` folder), organised by ARK
+- extracted thumbnails (thumbs folder), organised by ARK and content type (classes from the classification scheme)
+- CSV data:
+  - `processed_data.csv`: one line per annotation ARK,View,Image_filename,Category_name,Gallica,IIIF,Annotation_filename
+ - `import_pano.csv`: one line per annotated image, for later import into Panoptic
+path;Gallica[url];IIIF[url];Class[tag];ARK[text]
+ - one JSON file per annotated image in Roboflow Supervision format, in the SV folder
+
+![image](images/boxes.jpeg)
