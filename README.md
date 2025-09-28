@@ -31,6 +31,7 @@ and [methodology](https://docs.google.com/presentation/d/1TdVedZGo4_sOiXMk-Do7hS
 ## 3. Obtain annotations made in Roboflow
 
 This step allows to get access to the annotated data but also to reuse it under the same conditions as the data produced later by inference.
+
 <b>Workflow</b>:
 1. Export the annotated dataset from Roboflow in COCO format.
 In [Roboflow](https://app.roboflow.com/snooptypo/snooptypo/models): 
