@@ -137,6 +137,22 @@ Notes:
 
 ## 5. Integration with Panoptic app 
 
+The import of iconographic corpora in [Panoptic](https://panopticorg.github.io/) is done in two steps:
+1. Importing the thumbnails extracted in the previous steps
+2. Importing associated metadata (optional)
+
+For a subfolder processed in the previous step, you must therefore:
+    a.    Zip the thumbnails 
+	b.    Copy this zip file to the a server accessible to Panoptic and unzip it
+    c.    Import this folder into a Panoptic project
+    d.    Once the import is complete, import the metadata (processed_data.csv file) into Panoptic
+
+For these operations, see the Panoptic practical guide: BnF-ADM-2025-046350-01 
+
+At this stage, Panoptic should display the thumbnails and their metadata:
+- URL to Gallica (actionable by Ctrl-click)
+- type (ornament, letter, vignette)
+
 ## 6. Convert infered annotations to the IIIF standard
 
 
