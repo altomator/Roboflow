@@ -1,5 +1,5 @@
 # Roboflow
-Roboflow integration with Gallica content
+Roboflow integration with Gallica content (and [Panoptic](https://panopticorg.github.io/))
 
 ## General context
 - Extraction of typographical material from the early prints of the Réserve collections (BnF)
@@ -36,6 +36,7 @@ This step allows to get access to the annotated data but also to reuse it under 
 In [Roboflow](https://app.roboflow.com/snooptypo/snooptypo/models): 
 - Go to the Versions tab. Click on the Download Dataset button
 - Format: COCO, option: Download zip to computer
+  
 Notes:
 - The dataset must have been generated <i>without</i> augmentation in Roboflow, otherwise the same images will appear multiple times. 
 - The dataset includes JSON COCO annotations and the annotated images once uploaded to Roboflow.
@@ -45,7 +46,7 @@ Notes:
 - In this particular project, we have to restore the link to Gallica ARKs based on document titles. This data is contained in the `arks_database.csv` file. Not necessary if the images are named after the ARK document.
 
 3. Process the dataset
-- The `export_boxes.py` script processes JSON COCO annotations in order to extract frames from annotated content (ornate letters, decorations, etc.), superimpose them on images, and generate thumbnails of the content. It also generates CSV data for further processing, as well as CSV data that will be needed to import useful metadata into Panoptic (including the URL links to Gallica).
+- The `export_boxes.py` script processes JSON COCO annotations in order to extract frames from annotated content (ornate letters, decorations, etc.), superimpose them on images, and generate thumbnails of the content. It also generates CSV data for further processing, as well as CSV data that will be needed to import useful metadata into [Panoptic](https://panopticorg.github.io/) (including the URL links to Gallica).
 
 There are two types of thumbnails produced:
 - extracted from Roboflow images,
