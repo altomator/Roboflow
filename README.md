@@ -6,6 +6,7 @@ Roboflow integration with Gallica content (and [Panoptic](https://panopticorg.gi
 - Roboflow [project](https://app.roboflow.com/snooptypo)
 - [Methodology](https://docs.google.com/presentation/d/1TdVedZGo4_sOiXMk-Do7hSQA7STYTNOU_ZxO1fHRrXw/edit?slide=id.g12b1dcf850d_0_49#slide=id.g12b1dcf850d_0_49)
 
+<i>(A French version of this tutorial is available)</i>
 
 ## 1. Extracting images from Gallica
 
@@ -106,3 +107,24 @@ The folder must be named after the ARK identifier. Recursive processing of a fol
 The results are stored in a JSON folder (one data file per image, named ark/ark-vue.json).  
 
 The elements detected in the images are described in the JSON data: position in the image, type, detection confidence. 
+
+```
+[
+    {
+        "x_min": 220.0,
+        "y_min": 306.0,
+        "x_max": 375.0,
+        "y_max": 460.0,
+        "class_id": 0,
+        "confidence": 0.90966796875,
+        "tracker_id": "",
+        "class_name": "Lettrine",
+        "file": "btv1b86000632/btv1b86000632-0001.jpg,
+        "model": "snooptypo/2"
+    }
+]
+```
+Notes:
+- With the -s option, the detected elements are annotated on the image and the image is saved (in the source folder).
+- With the -i option, IIIF thumbnails of the detected elements are exported via the Gallica IIIF API.
+- With the -d option, the detected elements are annotated on the image and the image is displayed:
