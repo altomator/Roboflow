@@ -156,13 +156,13 @@ At this stage, Panoptic should display the image thumbnails and their metadata:
 
 ## 6. Convert infered annotations to the IIIF standard
 
-The JSON annotations produced by the previous steps can be converted to the IIIF standard so that they can be used by IIIF-compatible tools. The `roboflow2iiif.py` script performs this conversion for a folder of JSON files (Supervision format). This folder must be named after the ARK of the Gallica document. The second parameter of the script is the size ratio used when obtaining images via the IIIF API.
+The JSON annotations produced by the previous steps can be converted to the IIIF standard so that they can be used by IIIF-compatible tools. The `roboflow2iiif.py` script performs this conversion for a folder of JSON files (Supervision format). This folder must be named after the ARK of the Gallica document. The second parameter of the script is the size ratio used when obtaining images via the IIIF API (see section 1.).
 
 ```
 python roboflow2iiif.py JSON/bpt6k858005x 0.5
 ```
 
-The script produces an IIIF annotation file (IIIF Presentation 2.0 version) in the `IIIF_annotations` folder. This file can then be opened in an IIIF-compatible [viewer](https://gallica.bnf.fr/view3if/ga/ark:/12148/bpt6k858005x).
+The script produces an IIIF annotation file (IIIF Presentation 2.0 version) in the `IIIF_annotations` folder. This local file can then be opened in an IIIF-compatible [viewer](https://gallica.bnf.fr/view3if/ga/ark:/12148/bpt6k858005x).
 
 ![image](images/mirador.png)
 
