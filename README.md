@@ -9,7 +9,7 @@ Roboflow integration with Gallica content
 
 ## 1. Extracting images from Gallica
 
-Workflow:
+<b>Workflow</b>:
 1. Obtaining images of documents (Gallica IIIF API, extraction script).
 2. Ingesting a subset of these documents into Roboflow for annotation.
 3. Processing the rest of the corpus.
@@ -19,7 +19,9 @@ Workflow:
 ```
 >python extract_iiif.py arks.txt 0.7
 ```
-IIIF images are stored in a IIF_images folder, in subfolders named by ARK IDs.
+Notes:
+- Remember to restart the script to cover the case where the API failed the first time.
+- Images are stored in a `IIIF_images folder`, in subfolders named by ARK IDs.
 
 ## 2. Training a model with Roboflow
 See this [tutorial](https://docs.google.com/presentation/d/1-a0tdgQRa2K5ESwN5IhTn8VnGtDaxeseK37TgvtaiHY/edit?slide=id.g12b1dcf850d_0_49#slide=id.g12b1dcf850d_0_49)
@@ -29,16 +31,28 @@ and [methodology](https://docs.google.com/presentation/d/1TdVedZGo4_sOiXMk-Do7hS
 ## 3. Obtain annotations made in Roboflow
 
 This step allows to get access to the annotated data but also to reuse it under the same conditions as the data produced later by inference.
-
-Workflow:
+<b>Workflow</b>:
 1. Export the annotated dataset from Roboflow in COCO format.
 In [Roboflow](https://app.roboflow.com/snooptypo/snooptypo/models): 
 - go to the Versions tab
 - Click on the Download Dataset button
 - Format: COCO, option: Download zip to computer
-Note: The dataset must have been generated <i>without</i> augmentation in Roboflow, otherwise the same images will appear multiple times. 
+Notes:
+- The dataset must have been generated <i>without</i> augmentation in Roboflow, otherwise the same images will appear multiple times. 
+- The dataset includes JSON COCO annotations and the annotated images once uploaded to Roboflow.
 
-2. 
+2. Prepare the processing
+- Unzip the .zip file into the processing folder. The annotated images are divided into three subfolders: test, train, and valid.
+- In this particular project, we have to restore the link to Gallica ARKs based on document titles. This data is contained in the `arks_database.csv` file. Not necessary if the images are named after the ARK document.
 
+3. Process the dataset
+- The `export_boxes.py` script processes JSON COCO annotations in order to extract frames from annotated content (ornate letters, decorations, etc.), superimpose them on images, and generate thumbnails of the content. It also generates CSV data for further processing, as well as CSV data that will be needed to import useful metadata into Panoptic (including the URL links to Gallica).
 
+There are two types of thumbnails produced:
+- extracted from Roboflow images,
+- generated via the Gallica IIIF API (at the best available resolution): optional, must be requested when calling with -i
 
+The script must be run on each test, train, and valid subfolder. Example with the test folder:
+```
+> python extract_boxest.py test 0.7 -i
+```
