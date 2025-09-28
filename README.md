@@ -132,3 +132,11 @@ Notes:
 - With the -s option, the detected elements are annotated on the image and the image is saved (in the source folder).
 - With the -i option, IIIF thumbnails of the detected elements are exported via the Gallica IIIF API (in the `IIIF_thumbs` folder).
 - With the -d option, the detected elements are annotated on the image and the image is displayed.
+
+![image](images/thumbs.jpeg)
+
+## 5. Integration with Panoptic app 
+
+## 6. Convert infered annotations to the IIIF standard
+
+
