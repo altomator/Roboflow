@@ -108,7 +108,7 @@ The folder must be named after the ARK identifier. Recursive processing of a fol
 python roboflow_inference.py IIIF_images snooptypo/2 -i
 ```
 
-The results are stored in a JSON folder (one data file per image, named ark/ark-vue.json).  
+The results are stored in a `JSON` folder (one data file per image, named ark/ark-vue.json).  
 
 The elements detected in the images are described in the JSON data: position in the image, type, detection confidence. 
 
