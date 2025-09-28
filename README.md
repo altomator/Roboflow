@@ -17,7 +17,7 @@ Roboflow integration with Gallica content (and [Panoptic](https://panopticorg.gi
 `extract_iiif.py` must be feed with a file of ARK IDs and a image ratio for extraction (> 0.0 and <= 1.0):
 
 ```
->python extract_iiif.py arks.txt 0.5
+python extract_iiif.py arks.txt 0.5
 ```
 Notes:
 - Remember to restart the script to cover the case where the API failed the first time.
@@ -55,7 +55,7 @@ There are two types of thumbnails produced:
 
 The script must be run on each test, train, and valid subfolder. Example with the test folder:
 ```
-> python extract_boxes.py test 0.7 -i
+python extract_boxes.py test 0.7 -i
 ```
 
 After processing, the data produced is stored in the `output` folder:
@@ -69,3 +69,40 @@ path;Gallica[url];IIIF[url];Class[tag];ARK[text]
  - one JSON file per annotated image in Roboflow Supervision format, in the SV folder
 
 ![image](images/boxes.jpeg)
+
+## 4. Use the model on other documents 
+
+The model trained in Roboflow can be used to automatically annotate new documents (inference mode).
+
+<b>Workflow</b>:
+1. Install the Roboflow Python environment
+- In a Terminal, create a Python environment:
+```
+python -m venv roboflow
+source roboflow/bin/activate
+pip install inference
+```
+
+2. Identify the model descriptors
+
+- Identify the Roboflow API key for the project on the Roboflow website, in the Settings tab, then ‘API Keys’
+- The key (‘Private API Key’) must be copied and pasted into this command line:
+
+```
+export ROBOFLOW_API_KEY="your key"
+```
+
+- Identify the name of the model that was trained in Roboflow, in the Project Versions tab, then by selecting the relevant version. The name of the model is given in the ‘Model URL’ field, here `snooptypo/2`.
+
+3. Launch processing
+
+To launch processing of an image folder from a Gallica document, using a model named `snooptypo/2`, enter this command in Terminal:
+ 
+```
+python roboflow_inference.py IIIF_images/btv1b86000632 snooptypo/2
+```
+
+The folder must be named after the ARK identifier. Recursive processing of a folder of folders is possible. 
+The results are stored in a JSON folder (one data file per image, named ark/ark-vue.json).  
+
+The elements detected in the images are described in the JSON data: position in the image, type, detection confidence. 
