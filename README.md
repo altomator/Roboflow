@@ -34,8 +34,7 @@ This step allows to get access to the annotated data but also to reuse it under 
 <b>Workflow</b>:
 1. Export the annotated dataset from Roboflow in COCO format.
 In [Roboflow](https://app.roboflow.com/snooptypo/snooptypo/models): 
-- go to the Versions tab
-- Click on the Download Dataset button
+- Go to the Versions tab. Click on the Download Dataset button
 - Format: COCO, option: Download zip to computer
 Notes:
 - The dataset must have been generated <i>without</i> augmentation in Roboflow, otherwise the same images will appear multiple times. 
