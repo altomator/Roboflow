@@ -100,7 +100,7 @@ export ROBOFLOW_API_KEY="your key"
 To launch processing of an image folder from a Gallica document, using a model named `snooptypo/2`, enter this command in Terminal:
  
 ```
-python roboflow_inference.py IIIF_images/btv1b86000632 snooptypo/2
+python roboflow_inference.py IIIF_images/btv1b86000632 snooptypo/2 -i
 ```
 
 The folder must be named after the ARK identifier. Recursive processing of a folder of folders is possible. 
@@ -126,5 +126,5 @@ The elements detected in the images are described in the JSON data: position in 
 ```
 Notes:
 - With the -s option, the detected elements are annotated on the image and the image is saved (in the source folder).
-- With the -i option, IIIF thumbnails of the detected elements are exported via the Gallica IIIF API.
-- With the -d option, the detected elements are annotated on the image and the image is displayed:
+- With the -i option, IIIF thumbnails of the detected elements are exported via the Gallica IIIF API (in the `IIIF_thumbs` folder).
+- With the -d option, the detected elements are annotated on the image and the image is displayed.
