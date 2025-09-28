@@ -1,5 +1,5 @@
 # Roboflow
-Roboflow integration with Gallica content (and [Panoptic](https://panopticorg.github.io/), and IIIF)
+<b>Roboflow integration with Gallica content (and [Panoptic](https://panopticorg.github.io/), and IIIF)</b>
 
 ## General context
 - Extraction of typographical material from the early prints of the Réserve collections (BnF)
