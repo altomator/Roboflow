@@ -1,0 +1,2 @@
+[
+{"x_min": 220, "y_min": 303, "x_max": 1648, "y_max": 2385, "class_id": 1, "confidence": "1.0", "tracker_id": "", "class_name": "Lettrine", "file": "Guy_de_Warvich_chevalier_dAngleterre_qui_view_64_num_26v_jpg.rf.e6c0b3e3874afe4ff011685b290d6a9c.jpg", "model": "snooptypo/2", "_comment": "Supervision format for ARK: btv1b86000632, vue: 0064; x,y,w,h in pixels, relatively to the listed file (0.7 ratio with the original image)"}]

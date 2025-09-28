@@ -1,0 +1,2 @@
+[
+{"x_min": 30, "y_min": 138, "x_max": 1020, "y_max": 1670, "class_id": 3, "confidence": "1.0", "tracker_id": "", "class_name": "Vignette", "file": "fantaisies_de_mere_Sote__contenant_view_135_num_66r_jpg.rf.1fa367e289a5e88c9e728f461a041748.jpg", "model": "snooptypo/2", "_comment": "Supervision format for ARK: bpt6k1512192v, vue: 0135; x,y,w,h in pixels, relatively to the listed file (0.7 ratio with the original image)"}]

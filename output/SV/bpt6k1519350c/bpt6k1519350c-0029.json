@@ -1,0 +1,2 @@
+[
+{"x_min": 303, "y_min": 1230, "x_max": 1496, "y_max": 3070, "class_id": 2, "confidence": "1.0", "tracker_id": "", "class_name": "Ornement", "file": "Ces_presentes_Heures_a_lusaige_de_view_29_num_NP_jpg.rf.a3f81762f2ebb4d14be0bc3dff5c2d3f.jpg", "model": "snooptypo/2", "_comment": "Supervision format for ARK: bpt6k1519350c, vue: 0029; x,y,w,h in pixels, relatively to the listed file (0.7 ratio with the original image)"}]

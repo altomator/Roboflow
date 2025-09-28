@@ -1,0 +1,2 @@
+[
+{"x_min": 200, "y_min": 113, "x_max": 1726, "y_max": 2168, "class_id": 3, "confidence": "1.0", "tracker_id": "", "class_name": "Vignette", "file": "Guillermi_Le_Rouille_Justicie_atque_injusticie_view_5_num_NP_jpg.rf.f5698735595c78bbb25ce7aaf6f6306f.jpg", "model": "snooptypo/2", "_comment": "Supervision format for ARK: bpt6k3163114, vue: 0005; x,y,w,h in pixels, relatively to the listed file (0.7 ratio with the original image)"}]

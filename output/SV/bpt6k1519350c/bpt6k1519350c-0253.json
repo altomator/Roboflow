@@ -1,0 +1,2 @@
+[
+{"x_min": 299, "y_min": 1241, "x_max": 1525, "y_max": 3114, "class_id": 3, "confidence": "1.0", "tracker_id": "", "class_name": "Vignette", "file": "Ces_presentes_Heures_a_lusaige_de_view_253_num_NP_jpg.rf.c2e30d99424eb67075f73054a30f4713.jpg", "model": "snooptypo/2", "_comment": "Supervision format for ARK: bpt6k1519350c, vue: 0253; x,y,w,h in pixels, relatively to the listed file (0.7 ratio with the original image)"}]

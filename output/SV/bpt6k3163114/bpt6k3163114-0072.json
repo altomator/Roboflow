@@ -1,0 +1,2 @@
+[
+{"x_min": 768, "y_min": 430, "x_max": 2289, "y_max": 2474, "class_id": 1, "confidence": "1.0", "tracker_id": "", "class_name": "Lettrine", "file": "Guillermi_Le_Rouille_Justicie_atque_injusticie_view_72_num_XXVIIIv_jpg.rf.f08b559dbe9c39a7c712229c515a9208.jpg", "model": "snooptypo/2", "_comment": "Supervision format for ARK: bpt6k3163114, vue: 0072; x,y,w,h in pixels, relatively to the listed file (0.7 ratio with the original image)"}]

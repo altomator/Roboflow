@@ -1,0 +1,14 @@
+[
+    {
+        "x_min": 472.0,
+        "y_min": 883.0,
+        "x_max": 1262.0,
+        "y_max": 1741.0,
+        "class_id": 2,
+        "confidence": 0.9179506897926331,
+        "tracker_id": "",
+        "class_name": "Vignette",
+        "file": "IIIF_images/bpt6k70557r/bpt6k70557r-0002.jpg",
+        "model": "snooptypo/2"
+    }
+]

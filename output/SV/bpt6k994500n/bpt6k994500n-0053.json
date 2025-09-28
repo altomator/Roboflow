@@ -1,0 +1,2 @@
+[
+{"x_min": 95, "y_min": 268, "x_max": 1168, "y_max": 1899, "class_id": 1, "confidence": "1.0", "tracker_id": "", "class_name": "Lettrine", "file": "Grammaticae_institutionis_libri_quatuor__latine_view_53_num_d3r_jpg.rf.65bba54bfd348b27c59cf7491ccc2583.jpg", "model": "snooptypo/2", "_comment": "Supervision format for ARK: bpt6k994500n, vue: 0053; x,y,w,h in pixels, relatively to the listed file (0.7 ratio with the original image)"}]

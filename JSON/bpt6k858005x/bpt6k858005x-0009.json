@@ -1,0 +1,26 @@
+[
+    {
+        "x_min": 385.0,
+        "y_min": 147.0,
+        "x_max": 492.0,
+        "y_max": 230.0,
+        "class_id": 0,
+        "confidence": 0.483949214220047,
+        "tracker_id": "",
+        "class_name": "Lettrine",
+        "file": "IIIF_images/bpt6k858005x/bpt6k858005x-0009.jpg",
+        "model": "snooptypo/2"
+    },
+    {
+        "x_min": 298.0,
+        "y_min": 144.0,
+        "x_max": 389.0,
+        "y_max": 230.0,
+        "class_id": 0,
+        "confidence": 0.4030722975730896,
+        "tracker_id": "",
+        "class_name": "Lettrine",
+        "file": "IIIF_images/bpt6k858005x/bpt6k858005x-0009.jpg",
+        "model": "snooptypo/2"
+    }
+]

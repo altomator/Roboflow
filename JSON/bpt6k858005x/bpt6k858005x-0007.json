@@ -1,0 +1,38 @@
+[
+    {
+        "x_min": 404.0,
+        "y_min": 406.0,
+        "x_max": 857.0,
+        "y_max": 1094.0,
+        "class_id": 2,
+        "confidence": 0.9144103527069092,
+        "tracker_id": "",
+        "class_name": "Vignette",
+        "file": "IIIF_images/bpt6k858005x/bpt6k858005x-0007.jpg",
+        "model": "snooptypo/2"
+    },
+    {
+        "x_min": 240.0,
+        "y_min": 415.0,
+        "x_max": 374.0,
+        "y_max": 1091.0,
+        "class_id": 1,
+        "confidence": 0.8617032766342163,
+        "tracker_id": "",
+        "class_name": "Ornement",
+        "file": "IIIF_images/bpt6k858005x/bpt6k858005x-0007.jpg",
+        "model": "snooptypo/2"
+    },
+    {
+        "x_min": 884.0,
+        "y_min": 411.0,
+        "x_max": 1020.0,
+        "y_max": 1095.0,
+        "class_id": 1,
+        "confidence": 0.8600772619247437,
+        "tracker_id": "",
+        "class_name": "Ornement",
+        "file": "IIIF_images/bpt6k858005x/bpt6k858005x-0007.jpg",
+        "model": "snooptypo/2"
+    }
+]

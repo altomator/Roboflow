@@ -1,0 +1,62 @@
+[
+    {
+        "x_min": 181.0,
+        "y_min": 183.0,
+        "x_max": 318.0,
+        "y_max": 311.0,
+        "class_id": 0,
+        "confidence": 0.8564891815185547,
+        "tracker_id": "",
+        "class_name": "Lettrine",
+        "file": "IIIF_images/bpt6k858005x/bpt6k858005x-0023.jpg",
+        "model": "snooptypo/2"
+    },
+    {
+        "x_min": 166.0,
+        "y_min": 1079.0,
+        "x_max": 266.0,
+        "y_max": 1160.0,
+        "class_id": 0,
+        "confidence": 0.5628751516342163,
+        "tracker_id": "",
+        "class_name": "Lettrine",
+        "file": "IIIF_images/bpt6k858005x/bpt6k858005x-0023.jpg",
+        "model": "snooptypo/2"
+    },
+    {
+        "x_min": 630.0,
+        "y_min": 676.0,
+        "x_max": 735.0,
+        "y_max": 759.0,
+        "class_id": 0,
+        "confidence": 0.5478914380073547,
+        "tracker_id": "",
+        "class_name": "Lettrine",
+        "file": "IIIF_images/bpt6k858005x/bpt6k858005x-0023.jpg",
+        "model": "snooptypo/2"
+    },
+    {
+        "x_min": 633.0,
+        "y_min": 529.0,
+        "x_max": 736.0,
+        "y_max": 611.0,
+        "class_id": 0,
+        "confidence": 0.5312821865081787,
+        "tracker_id": "",
+        "class_name": "Lettrine",
+        "file": "IIIF_images/bpt6k858005x/bpt6k858005x-0023.jpg",
+        "model": "snooptypo/2"
+    },
+    {
+        "x_min": 176.0,
+        "y_min": 349.0,
+        "x_max": 265.0,
+        "y_max": 426.0,
+        "class_id": 0,
+        "confidence": 0.4961189925670624,
+        "tracker_id": "",
+        "class_name": "Lettrine",
+        "file": "IIIF_images/bpt6k858005x/bpt6k858005x-0023.jpg",
+        "model": "snooptypo/2"
+    }
+]

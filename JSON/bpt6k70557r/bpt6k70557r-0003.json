@@ -1,0 +1,14 @@
+[
+    {
+        "x_min": 553.0,
+        "y_min": 587.0,
+        "x_max": 700.0,
+        "y_max": 711.0,
+        "class_id": 0,
+        "confidence": 0.5374417304992676,
+        "tracker_id": "",
+        "class_name": "Lettrine",
+        "file": "IIIF_images/bpt6k70557r/bpt6k70557r-0003.jpg",
+        "model": "snooptypo/2"
+    }
+]
